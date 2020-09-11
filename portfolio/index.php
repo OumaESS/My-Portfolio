@@ -26,7 +26,7 @@
     <link rel='stylesheet' href='https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="img/logos/SL.png" alt="">
+    <link rel="icon" href="img/logos/LOG5.png" alt="">
     <link rel="stylesheet" href="css/style.css">
 
 

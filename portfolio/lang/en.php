@@ -1,6 +1,6 @@
 <?php
 $lang = array(
-    "title" => "My Portfolio",
+    "title" => "Portfolio",
     "about" => "ABOUT",
     "skills" => "SKILLS",
     "projects" => "PROJECTS",
