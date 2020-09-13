@@ -287,7 +287,7 @@
                                     aria-hidden="true"></i></a>
                         </div>
                         <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
-                            <a href="https://www.facebook.com/oumaima.essafir.7 target="_blank"><i class="fa fa-facebook-f"
+                            <a href="https://www.facebook.com/oumaima.essafir.7"_blank"><i class="fa fa-facebook-f"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
