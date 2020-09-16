@@ -1,6 +1,10 @@
 <?php
 
   include "config.php";
+  include "admin/db.php";
+
+  $selectT = $db_connect->query("SELECT * FROM projects");
+  $project = $selectT->fetchAll();
 
 ?>
 <!DOCTYPE html>
@@ -197,52 +201,25 @@
                 <?php echo $lang['projects'] ?>
             </h2>
             <div class="web-apps row pure-g">
+                
+            <?php foreach($project as $project):?>
                 <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/point.png" class="project-img pure-img">
-                    <h4><a href="https://github.com/OumaESS/Chaleng-point">Challenge</a></h4>
+                    <img alt="" src="img/portfolio/<?=$project['img'] ;?>" class="project-img pure-img"  style="width: 17em;">
+                    <h4><a href="<?=$project['source'] ;?>"><?=$project['name'] ;?></a></h4>
                     <p>
-                        <?php echo $lang['projp1'] ?>
+                    <?=$project['descr'] ;?>
                     </p>
                 </div>
-                <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/todo.png" class="project-img pure-img">
-                    <h4><a href="https://github.com/OumaESS/todo-list-challenge">TODO-list</a></h4>
-                    <p>
-                        <?php echo $lang['projp2'] ?>
-                    </p>
-                </div>
-                <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/Covid.png" class="project-img pure-img">
-                    <h4><a href="https://github.com/OumaESS/Corona-test">Test Covid-19</a></h4>
-                    <p>
-                        <?php echo $lang['projp3'] ?>
-                    </p>
-                </div>
-                <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/PS.png" class="project-img pure-img">
-                    <h4><a href="https://github.com/OumaESS/MaquetteN1">PS/UI/Grid</a></h4>
-                    <p>
-                        <?php echo $lang['projp4'] ?>
-                    </p>
-                </div>
-                <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/Clock.jpg" class="project-img pure-img">
-                    <h4><a href="https://github.com/OumaESS/Horloge">Montre</a></h4>
-                    <p>Dans ce projet, nous allons utiliser ce que nous avons appris et le mettre en pratique dans une démo, en utilisant JavaScript et CSS pour créer une horloge analogique fonctionnelle.</p>
-                </div>
-                <div class="img-container pure-u-1-1 pure-u-md-1-3 pure-u-sm-1-2">
-                    <img alt="" src="img/portfolio/vitr.png" class="project-img pure-img" />
-                    <h4><a href="https://github.com/yahyabouhlal/Workflow">Site vitraine</a></h4>
-                    <p>
-                        <?php echo $lang['projp5'] ?>
-                    </p>
-                </div>
+            <?php endforeach;?> 
+
+
+                              
             </div>
         </section>
 
         <!-- Contact -->
 
-        <section id="contact" class="js--wp-3">
+        <section id="contact" >
             <h2>
                 <?php echo $lang['contact'] ?>
             </h2>
@@ -287,7 +264,7 @@
                                     aria-hidden="true"></i></a>
                         </div>
                         <div class="pure-u-1-2 pure-u-sm-1-2 pure-u-md-1-4">
-                            <a href="https://www.facebook.com/oumaima.essafir.7"_blank"><i class="fa fa-facebook-f"
+                            <a href="https://www.facebook.com/oumaima.essafir.7" target="_blank"><i class="fa fa-facebook-f"
                                     aria-hidden="true"></i></a>
                         </div>
                     </div>
