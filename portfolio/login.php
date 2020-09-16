@@ -42,12 +42,12 @@
     </head>
 
     <body class="body">
-        <!-- <form class="box" action="404.php" method="POST" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <form class="box" action="404.php" method="POST" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
             <h1>Login</h1>
             <input type="text" name="username" placeholder="Username">
             <input type="password" name="password" placeholder="Password">
             <input type="submit" name="" value="Login">
-        </form> -->
+        </form>
 
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

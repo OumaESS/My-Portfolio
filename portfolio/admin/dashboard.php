@@ -3,7 +3,7 @@ include 'db.php';
 require 'session.php';
 Session::start();
 
-$select = $db->query("SELECT dashboard_id, name, description, image FROM dashboard");
+$select = $db->query("SELECT name, source, img, descr FROM projects");
 $items = $select->fetchAll();
 
 
